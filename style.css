@@ -178,22 +178,21 @@ section.games-grid {
 
 .games-list {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     list-style: none;
     padding: 0;
 }
 
-li.game-card {
+.game-card {
+    
     background-color: #1c1c1c;
     border-radius: 8px;
     padding: 15px;
     transition: transform 0.3s ease-in-out;
 }
 
-li.game-card:hover {
-    transform: scale(1.05);
-}
 
 .game-image {
     background-color: #fff;
@@ -222,4 +221,29 @@ p {
     font-size: 1rem;
     color: #ddd;
     line-height: 1.5;
+}
+
+.btn-modal{
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.modal {
+    width: 60%;
+    min-width: 300px;
+    height: 600px;
+    background-color: #000;
+    padding: 20px;
+    z-index: 999;
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.modal-toggle:checked ~ .modal {
+    display: block;
 }
