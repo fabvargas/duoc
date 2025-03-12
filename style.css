@@ -13,6 +13,7 @@ html,body{
     --z-index-1:10;
     --z-index-2:20;
     --z-index-3:30;
+    --z-index-4:40;
    
 }
 /* HERO */
@@ -45,7 +46,7 @@ html,body{
 }
 
 .title-hero-container{
-    width: 40%;
+    width: 60%;
     min-width: 300px;
     position: relative;
    z-index: var(--z-index-2);
@@ -117,7 +118,7 @@ html,body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: var(--z-index-3);
+    z-index: var(--z-index-4);
     transition: 0.3s;
 }
 
@@ -132,11 +133,11 @@ html,body{
     margin: 0;
     background-color: #000;
     transform: translateX(-100%);
-    z-index: var(--z-index-2);
+    z-index: var(--z-index-3);
 }
 
 .menu-list{
-padding: 0 30px;
+padding: 0 25px;
 padding-top: 40px;
   list-style: none;
    
@@ -154,7 +155,7 @@ padding-top: 40px;
 }
 
 .menu-item:hover{
-    background-color: #3c1b71;
+    background-color: var(--primary-color);
 }
 
 .menu-item a{
@@ -172,13 +173,12 @@ padding-top: 40px;
 /* Grid */
 
 
-section.games-grid {
+.games-grid {
     padding: 20px;
 }
 
 .games-list {
     display: grid;
-    position: relative;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     list-style: none;
@@ -222,27 +222,42 @@ p {
     line-height: 1.5;
 }
 
-.btn-modal{
-    padding: 10px;
+.game-card:hover {
+    transform: scale(1.02);
+}
+
+.game-button{
     background-color: var(--primary-color);
     color: #fff;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.modal {
-    width: 60%;
-    min-width: 300px;
-    height: 600px;
-    background-color: #000;
-    padding: 20px;
-    z-index: 999;
-    display: none;
-    position: absolute; 
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
+.game-button:hover{
+    background-color: #f1c40f;
 }
 
-.modal-toggle:checked ~ .modal {
-    display: block;
+.game-button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .btn-menu{
+        top: 10px;
+        left: 10px;
+    }
+
+   .games-grid{
+    padding: 0 5px
+   }
+
+ 
+    
 }
