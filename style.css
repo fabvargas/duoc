@@ -22,6 +22,11 @@ a{
     color: #fff;
 }
 
+.bg-back{
+    box-sizing: border-box;
+    background-color: #000;
+}
+
 /* HERO */
 .hero-container{
     display: flex;
@@ -116,6 +121,23 @@ a{
 .hero-categories li:hover{
     background-color: var(--primary-color);
    
+}
+
+.btn-signup{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: var(--z-index-3);
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 900;
 }
 
 /* MENU */
@@ -356,4 +378,79 @@ p {
 .home-button a img{
     width: 30px;
     height: 25px;
+}
+
+/* signup */
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signup-form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    width: 40%;
+    padding: 25px;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+
+.signup-form h1 {
+    color: var(--primary-color);
+
+}
+
+.signup-form label{
+    margin-right: auto;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.signup-form input{
+    width: calc(100% - 25px);
+    padding: 10px;
+    margin: 10px 0 0 0; ;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-form{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 20px auto 0;
+}
+
+.btn-form:hover{
+   scale: 1.03;
+   
+}
+
+.signup-form p{
+    font-size: 12px;
+    margin: 5px 0 10px 0;
+    margin-right: auto;
+}
+
+.p-red{
+    color: red;
+}
+
+.p-green{
+    color: green;
 }

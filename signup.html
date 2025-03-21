@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juegos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset=utf-8>
+    <meta name="description" content="Juegos de la red">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    
+    <label class="btn-menu" for="menu" ></label>
+    <input type="checkbox" id="menu" class="menu-toggle" hidden />
+    <nav class="menu">
+        <ul class="menu-list">
+            <h3>Categorias</h3>
+            <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="accion.html" class="menu-link">Acción</a></li>
+            <li class="menu-item"><a href="aventura.html" class="menu-link"> Aventura</a></li>
+            <li class="menu-item"><a href="deporte.html" class="menu-link">Deportes</a></li>
+            <li class="menu-item"><a href="multijugador.html" class="menu-link">Multijugador</a></li>
+            <li class="menu-item"><a href="terror.html" class="menu-link">Terror</a></li>
+            
+        </ul>
+    </nav>
+
+    <main class="form-container">
+        <form class="signup-form">
+            <h1 class="signup-title">Signup</h1>
+            <label for="">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Nombre">
+            <p id="error-nombre" class="p-red"></p>
+            <label for="">Usuario</label>
+            <input type="text" id="usuario" name="usuario" class="form-input" placeholder="Usuario">
+            <p id="error-usuario" class="p-red"></p>
+            <label for="">Correo</label>
+            <input type="text" id="correo" name="correo" class="form-input" placeholder="Correo">
+            <p id="error-correo" class="p-red"></p>
+            <label for="">Contraseña</label>
+            <input type="password" id="contrasena" name="contraseña" class="form-input" placeholder="Contraseña">
+            <p id="error-contrasena" class="p-red"></p>
+            <label for="">Repite la Contraseña</label>
+            <input type="password" id="contrasena2" name="contraseña2" class="form-input" placeholder="Contraseña">
+            <p id="error-contrasena2" class="p-red"></p>
+            <label for="">Fecha de nacimiento</label>
+            <input type="date" id="nacimiento" name="nacimiento" class="form-input">
+            <p id="error-nacimiento" class="p-red"></p>
+            <div style="display: flex; gap: 4px;"> 
+                <button class="btn-form" type="submit">Enviar</button>
+                <button class="btn-form" type="reset">Reset</button>
+            </div>
+
+            <p id="success" class="p-green"></p>
+        </form>
+
+       
+
+    </main>
+
+    <button class="home-button">
+        <a href="index.html">
+            <img src="/public/home.svg" alt="">
+        </a>
+
+</body>
+<script src="index.js" ></script>
+</html>
